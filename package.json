@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "prismic-nodejs": "^1.2.0",
+    "alw-react-native-prismic.io": "^1.0.1",
     "react": "15.3.2",
     "react-native": "0.35.0"
   },
