@@ -30,7 +30,9 @@ class NewsApp extends Component {
   }
 
   render() {
-    return routes.init();
+    console.log("IAmRightHereMotherTrucker")
+    console.log(routes)
+    return routes();
   }
 }
 

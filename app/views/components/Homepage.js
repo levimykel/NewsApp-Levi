@@ -1,8 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import {AppRegistry, Image, ListView, ScrollView, Text, TouchableHighlight, View } from 'react-native';
 
-import application from './controllers/application';
+import application from '../../controllers/application';
 import styles from '../stylesheets/homepage';
+import ArticleTile from './ArticleTile';
 
 
 const articleTileContent = [
@@ -23,6 +24,8 @@ export default class Homepage extends Component {
   }
 
   componentWillMount() {
+    console.log("this.props")
+    console.log(this.props.navigation)
     application.homepage()
     .then((doc) => {
       console.log(doc)
@@ -34,7 +37,7 @@ export default class Homepage extends Component {
     title: PropTypes.string.isRequired
   }
 
-  _navigate(){
+  _navigate = () => {
     this.props.navigation.transitionTo('Article', {uid: "example"});
   }
 

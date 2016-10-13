@@ -8,6 +8,6 @@ const routeList = [
   {name: 'Article', index: 1, component: Article}
 ]
 
-export const init = () => {
-  return React.createElement(Router, routeList)
+export default function () {
+  return React.createElement(Router, {routes: routeList} )
 }

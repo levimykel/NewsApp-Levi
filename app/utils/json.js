@@ -3,7 +3,7 @@ export default {
   /*
   * Extends a base object with all the key/values of another.
   */
-  extend(obj, other) {
+  extends(obj, other) {
     let result = this.copy(obj)
     Object.keys(other).forEach(key => result[key] = other[key])
     return result

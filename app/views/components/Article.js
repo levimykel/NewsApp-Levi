@@ -29,6 +29,7 @@ export default class Article extends Component {
           <Text style={styles.title}>
             Article
           </Text>
+          <Text>{this.props.uid}</Text>
         </View>
       </ScrollView>
     );

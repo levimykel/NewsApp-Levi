@@ -13,7 +13,7 @@ export default class Router extends Component {
   }
 
   getRouteByTitle = (routeTitle) => {
-    return this.props.routes.find((route) => route.title === routeTitle)
+    return this.props.routes.find((route) => route.name === routeTitle)
   }
 
   previous = () => {
@@ -21,11 +21,12 @@ export default class Router extends Component {
   }
 
   transitionTo = (routeTitle, data) => {
-    const route = this.getRouteByTitle(routeTitle);
+    let route = this.getRouteByTitle(routeTitle);
     if(!route) throw "We can't find the route " + routeTitle;
 
     this.state.currentIndex = route.index
-    this.state.navigator.push(Json.extends(route, {data}));
+    route.data = data || {};
+    this.state.navigator.push(route);
   }
 
   renderScene = (route, navigator) => {
@@ -39,14 +40,16 @@ export default class Router extends Component {
         transitionTo: this.transitionTo
       },
       ctx: Prismic.ctx()
-    }, route.data)
+    }, route.data || {})
+    console.log("whereisitatrightnow")
+    console.log(props)
 
     return (
       React.createElement(Content, props)
     )
   }
 
-  configureScene = (route, routeStack) =>
+  configureScene = (route, routeStack) => {
     if(this.state.currentIndex < route.index) Navigator.SceneConfigs.FloatFromLeft
     else Navigator.SceneConfigs.PushFromRight
   }
@@ -56,7 +59,7 @@ export default class Router extends Component {
       <Navigator
         initialRoute={this.props.routes[0]}
         renderScene={this.renderScene}
-        configureScene={this.configureScene} />
+         />
     )
   }
 }

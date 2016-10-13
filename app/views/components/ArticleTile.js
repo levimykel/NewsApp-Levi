@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import {Image, Text, View } from 'react-native';
-import style from '../stylesheets/articleTile';
+import styles from '../stylesheets/articleTile';
 
-export default class class ArticleTile extends Component {
+export default class ArticleTile extends Component {
 
   static propTypes = {
     content: PropTypes.object.isRequired
