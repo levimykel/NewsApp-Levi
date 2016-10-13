@@ -1,30 +1,22 @@
 import React, { Component, PropTypes } from 'react';
-import {
-  AppRegistry,
-  Image,
-  ListView,
-  Navigator,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableHighlight,
-  View
-} from 'react-native';
+import {AppRegistry, Image, ListView, ScrollView, Text, TouchableHighlight, View } from 'react-native';
+
+import styles from '../stylesheets/article';
 
 export default class Article extends Component {
-  
+
   static propTypes = {
     uid: PropTypes.string
   }
-  
+
   _navigate(){
     this.props.navigation.previous();
   }
-  
+
   render() {
-    console.log(this.props)
-    console.log("somethingsomethingsomething")
+    console.log("\n\n\n\nArticle UID \n")
     console.log(this.props.uid)
+    console.log("\n\n\n\n")
     return (
       <ScrollView>
         <View>
@@ -42,28 +34,3 @@ export default class Article extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    paddingTop: 40,
-    backgroundColor: '#F5FCFF',
-  },
-  title: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  tagline: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-  articleTile: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 20,
-  },
-});
