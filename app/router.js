@@ -41,8 +41,6 @@ export default class Router extends Component {
       },
       ctx: Prismic.ctx()
     }, route.data || {})
-    console.log("whereisitatrightnow")
-    console.log(props)
 
     return (
       React.createElement(Content, props)

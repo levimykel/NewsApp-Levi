@@ -1,13 +1,27 @@
-import Prismic from './prismic';
+import PrismicHelper from './prismic';
+import Prismic from "alw-react-native-prismic.io";
 
-function homepage () {
-  return Prismic.getApi()
+async function homepage () {
+  try {
+    const api = await PrismicHelper.getApi()
+    const homeDoc = await api.getSingle('home')
+    const articles = await api.query(Prismic.Predicates.at("document.type", "article"))
+    return {homeDoc, articles}
+  } catch(error) {
+    console.log(error);
+    return {};
+  }
+}
+
+function article (uid) {
+  return PrismicHelper.getApi()
   .then((api) => {
-    return api.getSingle('home')
+    return api.getByUID("article", uid)
   })
   .catch((err) => {
     return err;
   })
 }
 
-export default {homepage}
+//export {article}
+export default {homepage, article}

@@ -1,11 +1,15 @@
 import {StyleSheet} from 'react-native';
 
+var sectionMarginBottom = 20;
+
 export default StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
     paddingTop: 40,
+    paddingRight: 30,
+    paddingLeft: 30,
     backgroundColor: '#F5FCFF',
   },
   title: {
@@ -13,14 +17,19 @@ export default StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-  tagline: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  section: {
+    marginBottom: sectionMarginBottom,
   },
-  articleTile: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 20,
+  image: {
+    width: 313,
+    height: 200,
   },
+  text: {
+    marginBottom: sectionMarginBottom,
+  },
+  imageWithCaption: {
+    flex: 1,
+    alignItems: 'center',
+    marginBottom: sectionMarginBottom,
+  }
 });
