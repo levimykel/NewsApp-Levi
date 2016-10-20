@@ -23,6 +23,14 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		CB98640D1DB7C5C500066F8F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB98640B1DB7C5C500066F8F /* Montserrat-Bold.ttf */; };
+		CB98640E1DB7C5C500066F8F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB98640C1DB7C5C500066F8F /* Montserrat-Regular.ttf */; };
+		CB98641B1DB7C61800066F8F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9864191DB7C61800066F8F /* Lato-Bold.ttf */; };
+		CB98641C1DB7C61800066F8F /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB98641A1DB7C61800066F8F /* Lato-Regular.ttf */; };
+		CB98641D1DB7C73800066F8F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9864191DB7C61800066F8F /* Lato-Bold.ttf */; };
+		CB98641E1DB7C73B00066F8F /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB98641A1DB7C61800066F8F /* Lato-Regular.ttf */; };
+		CB98641F1DB7C73E00066F8F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB98640B1DB7C5C500066F8F /* Montserrat-Bold.ttf */; };
+		CB9864201DB7C74000066F8F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB98640C1DB7C5C500066F8F /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +135,10 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		CB98640B1DB7C5C500066F8F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../../Desktop/Montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		CB98640C1DB7C5C500066F8F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../../Desktop/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		CB9864191DB7C61800066F8F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../../../Desktop/Lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		CB98641A1DB7C61800066F8F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../../../Desktop/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +301,10 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				CB9864191DB7C61800066F8F /* Lato-Bold.ttf */,
+				CB98641A1DB7C61800066F8F /* Lato-Regular.ttf */,
+				CB98640B1DB7C5C500066F8F /* Montserrat-Bold.ttf */,
+				CB98640C1DB7C5C500066F8F /* Montserrat-Regular.ttf */,
 				13B07FAE1A68108700A75B9A /* NewsApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* NewsAppTests */,
@@ -505,6 +521,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9864201DB7C74000066F8F /* Montserrat-Regular.ttf in Resources */,
+				CB98641D1DB7C73800066F8F /* Lato-Bold.ttf in Resources */,
+				CB98641E1DB7C73B00066F8F /* Lato-Regular.ttf in Resources */,
+				CB98641F1DB7C73E00066F8F /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,8 +532,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB98640E1DB7C5C500066F8F /* Montserrat-Regular.ttf in Resources */,
+				CB98641C1DB7C61800066F8F /* Lato-Regular.ttf in Resources */,
+				CB98641B1DB7C61800066F8F /* Lato-Bold.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				CB98640D1DB7C5C500066F8F /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

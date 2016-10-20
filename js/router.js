@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { StyleSheet, View, Navigator } from 'react-native';
+import { Navigator } from 'react-native';
 import Application from './controllers/application';
 import Prismic from './controllers/prismic';
 import Json from './utils/json';

@@ -1,25 +1,42 @@
 import React, { Component, PropTypes } from 'react';
 import {ListView, ScrollView, StatusBar, Text, View } from 'react-native';
 
-import application from '../../controllers/application';
-import styles from '../stylesheets/homepage';
+import application from '../controllers/application';
+import styles from './HomepageStyles';
 import ArticleTile from './ArticleTile';
+
+
 
 export default class Homepage extends Component {
   // Initialize the hardcoded data
   constructor(props) {
     super(props);
     this.state = {};
+    //this.convertDate = this.convertDate.bind(this);
+  }
+  
+  convertDate(timestamp) {
+    var months = ['january','february','march','april','may','june','july','august','september','october','november','december'];
+    var year = timestamp.getFullYear();
+    var month = months[timestamp.getMonth()];
+    var date = timestamp.getDate();
+    var readableDate = date + ' ' + month + ' ' + year ;
+    return readableDate;
   }
   
   setTiles() {
     var articleTileContent = [];
     var articles = this.state.homeContent.articles.results;
-    articles.forEach(function (article) {
+    articles.forEach((article) => {
+      var timestamp = article.getTimestamp('article.date')
+      var date = this.convertDate(timestamp)
       articleTileContent.push(
         {
-          "title":article.getStructuredText('article.title').asText(),
-          "image":{uri: article.getImage('article.image').url},
+          "image": {uri: article.getImageView('article.image', 'tile-mobile').url},
+          "title": article.getStructuredText('article.title').asText(),
+          "author": article.getText('article.author'),
+          "date": date,
+          "description": article.getFirstParagraph().text,
           "uid": article.uid
         }
       );
@@ -38,7 +55,7 @@ export default class Homepage extends Component {
       return null;
     } else {
       this.setTiles();
-      const homeDoc = this.state.homeContent.homeDoc
+      const layoutDoc = this.state.homeContent.layoutDoc
       const articles = this.state.homeContent.articles
       return (
         <ScrollView>
@@ -46,13 +63,12 @@ export default class Homepage extends Component {
             hidden
           />
           <View style={styles.container}>
-            <Text style={styles.title}>
-              {homeDoc.getStructuredText('home.title').asText()}
-            </Text>
-            <Text style={styles.tagline}>
-              {homeDoc.getStructuredText('home.description').asText()}
-            </Text>
-            <ListView
+            <View style={styles.logoWrapper}>
+              <Text style={styles.logo}>
+                {layoutDoc.getText('home.logo')}
+              </Text>
+            </View>
+            <ListView style={styles.articleTilesWrapper}
               dataSource={this.state.dataSource}
               renderRow={(rowData) => <ArticleTile content={rowData} navigation={this.props.navigation}/>}
             />
@@ -60,6 +76,5 @@ export default class Homepage extends Component {
         </ScrollView>
       );
     }
-    
   }
 }

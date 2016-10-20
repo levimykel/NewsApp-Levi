@@ -1,4 +1,4 @@
-import configuration from '../../conf/prismic-configuration';
+import configuration from '../conf/prismic-configuration';
 import Prismic from "alw-react-native-prismic.io";
 
 function linkResolver (doc, ctx) {

@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import {Image, ScrollView, StatusBar, Text, TouchableHighlight, View } from 'react-native';
 
-import application from '../../controllers/application';
-import styles from '../stylesheets/article';
+import application from '../controllers/application';
+import styles from './ArticleStyles';
 
 
 export default class Article extends Component {
@@ -34,8 +34,11 @@ export default class Article extends Component {
     for (; i < length; i++) {
       text = textSection[i]
       switch(text.type) {
+        case 'heading2':
+          content.push(<Text style={styles.h2} key={"h2"+i}>{text.text}</Text>)
+          break;
         default:
-          content.push(<Text style={styles.text} key={"text"+i}>{text.text}</Text>)
+          content.push(<Text style={styles.paragraph} key={"text"+i}>{text.text}</Text>)
           break;
       }
     }
@@ -58,13 +61,13 @@ export default class Article extends Component {
           contentAddition = <View key={"textSection"+i}>{text}</View>
           break;
         case "quote":
-          contentAddition = <Text key={"quote"+i}>{slice.value.asText()}</Text>
+          contentAddition = <Text style={styles.quote} key={"quote"+i}>&laquo; {slice.value.asText()} &raquo;</Text>
           break;
         case "image-with-caption":
           var imageWithCaption = slice.value.toArray()[0]
           var imageUrl = imageWithCaption.getImage('illustration') ? imageWithCaption.getImage('illustration').url : ''
           var caption = imageWithCaption.getText('caption') || "" 
-          contentAddition = <View style={styles.imageWithCaption} key={"imageContainer"+i}><Image source={{uri: imageUrl}} style={styles.image} key={"image"+i}/><Text key={"caption"+i}>{caption}</Text></View>
+          contentAddition = <View style={styles.imageWithCaption} key={"imageContainer"+i}><Image source={{uri: imageUrl}} style={styles.image} key={"image"+i} resizeMode="cover"/><Text style={styles.caption} key={"caption"+i}>{caption}</Text></View>
           break;
       }
       content.push(contentAddition)
@@ -76,7 +79,8 @@ export default class Article extends Component {
     if (!this.state.articleContent) {
       return null;
     } else {
-      const article = this.state.articleContent
+      const article = this.state.articleContent.articleDoc
+      const layoutDoc = this.state.articleContent.layoutDoc
       const sliceZone = article.getSliceZone('article.body') || {}
       let content = this.buildContent(sliceZone.slices);
 
@@ -86,18 +90,29 @@ export default class Article extends Component {
               hidden
             />
             <View style={styles.container}>
+              <Text style={styles.logo}>
+                {layoutDoc.getText('home.logo')}
+              </Text>
+              
               <TouchableHighlight onPress={ () => this._navigate() } underlayColor='rgba(0,0,0,0)'>
-                <Text>Back to Home</Text>
+                <Text style={styles.back}>&larr; back to list</Text>
               </TouchableHighlight>
+                
               <Text style={styles.title}>
                 {article.getStructuredText('article.title').asText()}
               </Text>
-              <Image source={{uri: article.getImage('article.image').url}} style={[styles.image, styles.section]}/>
+              
+              <Image source={{uri: article.getImage('article.image').url}} style={[styles.mainImage, styles.section]} resizeMode="cover"/>
+              
               { !content ?
                 <Text>Content is missing, try again later</Text>
               :
-                <View>
+                <View style={styles.contentWrapper}>
                   {content}
+              
+                  <TouchableHighlight onPress={ () => this._navigate() } underlayColor='rgba(0,0,0,0)'>
+                    <Text style={styles.back}>&larr; back to list</Text>
+                  </TouchableHighlight>
                 </View>
               }
             </View>

@@ -1,15 +1,6 @@
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  Image,
-  ListView,
-  Navigator,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-import routes from './conf/routes';
+import { AppRegistry } from 'react-native';
+import routes from './js/conf/routes';
 
 class NewsApp extends Component {
   render() {

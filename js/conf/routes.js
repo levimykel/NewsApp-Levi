@@ -1,7 +1,7 @@
 import React from 'react';
-import Homepage from '../app/views/components/Homepage';
-import Article from '../app/views/components/Article';
-import Router from '../app/router';
+import Homepage from '../homepage/Homepage';
+import Article from '../article/Article';
+import Router from '../router';
 
 const routeList = [
   {name: 'Homepage', index: 0, component: Homepage},
