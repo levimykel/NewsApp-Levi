@@ -65,7 +65,7 @@ export default class Homepage extends Component {
           <View style={styles.container}>
             <View style={styles.logoWrapper}>
               <Text style={styles.logo}>
-                {layoutDoc.getText('home.logo')}
+                {layoutDoc.getText('site-layout.logo')}
               </Text>
             </View>
             <ListView style={styles.articleTilesWrapper}

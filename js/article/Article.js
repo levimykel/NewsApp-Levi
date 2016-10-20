@@ -91,7 +91,7 @@ export default class Article extends Component {
             />
             <View style={styles.container}>
               <Text style={styles.logo}>
-                {layoutDoc.getText('home.logo')}
+                {layoutDoc.getText('site-layout.logo')}
               </Text>
               
               <TouchableHighlight onPress={ () => this._navigate() } underlayColor='rgba(0,0,0,0)'>
