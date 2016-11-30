@@ -5,7 +5,7 @@ async function homepage () {
   try {
     const api = await PrismicHelper.getApi()
     const layoutDoc = await api.getSingle('site-layout')
-    const articles = await api.query(Prismic.Predicates.at("document.type", "article"))
+    const articles = await api.query(Prismic.Predicates.at("document.type", "article"),{ orderings: '[my.article.date desc]' })
     return {layoutDoc, articles}
   } catch(error) {
     console.log(error);

@@ -23,6 +23,22 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		CB196D301DC0A13500D58D81 /* Airship in Resources */ = {isa = PBXBuildFile; fileRef = CB196D2C1DC0A13500D58D81 /* Airship */; };
+		CB196D311DC0A13500D58D81 /* Airship in Resources */ = {isa = PBXBuildFile; fileRef = CB196D2C1DC0A13500D58D81 /* Airship */; };
+		CB196D321DC0A13500D58D81 /* AirshipKit in Resources */ = {isa = PBXBuildFile; fileRef = CB196D2D1DC0A13500D58D81 /* AirshipKit */; };
+		CB196D331DC0A13500D58D81 /* AirshipKit in Resources */ = {isa = PBXBuildFile; fileRef = CB196D2D1DC0A13500D58D81 /* AirshipKit */; };
+		CB196D441DC0A1B100D58D81 /* AirshipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB196D431DC0A14A00D58D81 /* AirshipKit.framework */; };
+		CB196D451DC0A1B100D58D81 /* AirshipKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB196D431DC0A14A00D58D81 /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB196D4A1DC0A1F700D58D81 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB196D491DC0A1F700D58D81 /* AirshipConfig.plist */; };
+		CB196D4B1DC0A1F700D58D81 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB196D491DC0A1F700D58D81 /* AirshipConfig.plist */; };
+		CB196D531DC0A2E700D58D81 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB196D521DC0A2E700D58D81 /* NotificationService.swift */; };
+		CB196D571DC0A2E700D58D81 /* ServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB196D501DC0A2E700D58D81 /* ServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB196D6C1DC0A40500D58D81 /* AirshipAppExtensions in Resources */ = {isa = PBXBuildFile; fileRef = CB196D6B1DC0A40500D58D81 /* AirshipAppExtensions */; };
+		CB196D6D1DC0A40500D58D81 /* AirshipAppExtensions in Resources */ = {isa = PBXBuildFile; fileRef = CB196D6B1DC0A40500D58D81 /* AirshipAppExtensions */; };
+		CB196D891DC0A4A100D58D81 /* AirshipAppExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB196D841DC0A45900D58D81 /* AirshipAppExtensions.framework */; };
+		CB196D8A1DC0A4DA00D58D81 /* AirshipAppExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB196D841DC0A45900D58D81 /* AirshipAppExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB4F9CB51DBFC6EE00C1F510 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4F9CB41DBFC6EE00C1F510 /* GameKit.framework */; };
+		CB4F9CB71DBFC6F100C1F510 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4F9CB61DBFC6F100C1F510 /* StoreKit.framework */; };
 		CB98640D1DB7C5C500066F8F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB98640B1DB7C5C500066F8F /* Montserrat-Bold.ttf */; };
 		CB98640E1DB7C5C500066F8F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB98640C1DB7C5C500066F8F /* Montserrat-Regular.ttf */; };
 		CB98641B1DB7C61800066F8F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9864191DB7C61800066F8F /* Lato-Bold.ttf */; };
@@ -111,7 +127,75 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		CB196D421DC0A14A00D58D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB196D3E1DC0A14A00D58D81 /* AirshipKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 494DD9571B0EB677009C134E;
+			remoteInfo = AirshipKit;
+		};
+		CB196D461DC0A1B100D58D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB196D3E1DC0A14A00D58D81 /* AirshipKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 494DD9561B0EB677009C134E;
+			remoteInfo = AirshipKit;
+		};
+		CB196D551DC0A2E700D58D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB196D4F1DC0A2E700D58D81;
+			remoteInfo = ServiceExtension;
+		};
+		CB196D831DC0A45900D58D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB196D7E1DC0A45900D58D81 /* AirshipAppExtensions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 49AA00FC1D65158C0081989A;
+			remoteInfo = AirshipAppExtensions;
+		};
+		CB196D851DC0A45900D58D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB196D7E1DC0A45900D58D81 /* AirshipAppExtensions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 49AA01051D65158C0081989A;
+			remoteInfo = AirshipAppExtensionsTests;
+		};
+		CB196D871DC0A49100D58D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB196D7E1DC0A45900D58D81 /* AirshipAppExtensions.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 49AA00FB1D65158C0081989A;
+			remoteInfo = AirshipAppExtensions;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB196D481DC0A1B100D58D81 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB196D8A1DC0A4DA00D58D81 /* AirshipAppExtensions.framework in Embed Frameworks */,
+				CB196D451DC0A1B100D58D81 /* AirshipKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB196D5B1DC0A2E700D58D81 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB196D571DC0A2E700D58D81 /* ServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -135,10 +219,22 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		CB98640B1DB7C5C500066F8F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../../Desktop/Montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
-		CB98640C1DB7C5C500066F8F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../../Desktop/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		CB9864191DB7C61800066F8F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../../../Desktop/Lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
-		CB98641A1DB7C61800066F8F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../../../Desktop/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		CB196D2C1DC0A13500D58D81 /* Airship */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Airship; sourceTree = "<group>"; };
+		CB196D2D1DC0A13500D58D81 /* AirshipKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AirshipKit; sourceTree = "<group>"; };
+		CB196D3E1DC0A14A00D58D81 /* AirshipKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirshipKit.xcodeproj; path = AirshipKit/AirshipKit.xcodeproj; sourceTree = "<group>"; };
+		CB196D491DC0A1F700D58D81 /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		CB196D501DC0A2E700D58D81 /* ServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB196D521DC0A2E700D58D81 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		CB196D541DC0A2E700D58D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB196D6B1DC0A40500D58D81 /* AirshipAppExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AirshipAppExtensions; path = Airship/AirshipAppExtensions; sourceTree = "<group>"; };
+		CB196D7E1DC0A45900D58D81 /* AirshipAppExtensions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirshipAppExtensions.xcodeproj; path = "../../../../../Desktop/libUAirship-8.0.3/AirshipAppExtensions/AirshipAppExtensions.xcodeproj"; sourceTree = "<group>"; };
+		CB3A1E951DBFA6AE00398ED3 /* NewsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = NewsApp.entitlements; path = NewsApp/NewsApp.entitlements; sourceTree = "<group>"; };
+		CB4F9CB41DBFC6EE00C1F510 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		CB4F9CB61DBFC6F100C1F510 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CB98640B1DB7C5C500066F8F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../fonts/Montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		CB98640C1DB7C5C500066F8F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../fonts/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		CB9864191DB7C61800066F8F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../fonts/Lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		CB98641A1DB7C61800066F8F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../fonts/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,16 +250,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB196D891DC0A4A100D58D81 /* AirshipAppExtensions.framework in Frameworks */,
+				CB4F9CB51DBFC6EE00C1F510 /* GameKit.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
+				CB4F9CB71DBFC6F100C1F510 /* StoreKit.framework in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
+				CB196D441DC0A1B100D58D81 /* AirshipKit.framework in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB196D4D1DC0A2E700D58D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +353,7 @@
 		13B07FAE1A68108700A75B9A /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				CB3A1E951DBFA6AE00398ED3 /* NewsApp.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -302,13 +410,18 @@
 			isa = PBXGroup;
 			children = (
 				CB9864191DB7C61800066F8F /* Lato-Bold.ttf */,
+				CB196D491DC0A1F700D58D81 /* AirshipConfig.plist */,
 				CB98641A1DB7C61800066F8F /* Lato-Regular.ttf */,
+				CB196D7E1DC0A45900D58D81 /* AirshipAppExtensions.xcodeproj */,
+				CB196D3E1DC0A14A00D58D81 /* AirshipKit.xcodeproj */,
 				CB98640B1DB7C5C500066F8F /* Montserrat-Bold.ttf */,
 				CB98640C1DB7C5C500066F8F /* Montserrat-Regular.ttf */,
 				13B07FAE1A68108700A75B9A /* NewsApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* NewsAppTests */,
+				CB196D511DC0A2E700D58D81 /* ServiceExtension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				CB4F9CB31DBFC6EE00C1F510 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -319,8 +432,47 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* NewsApp.app */,
 				00E356EE1AD99517003FC87E /* NewsAppTests.xctest */,
+				CB196D501DC0A2E700D58D81 /* ServiceExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CB196D3F1DC0A14A00D58D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB196D431DC0A14A00D58D81 /* AirshipKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB196D511DC0A2E700D58D81 /* ServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CB196D521DC0A2E700D58D81 /* NotificationService.swift */,
+				CB196D541DC0A2E700D58D81 /* Info.plist */,
+			);
+			path = ServiceExtension;
+			sourceTree = "<group>";
+		};
+		CB196D7F1DC0A45900D58D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB196D841DC0A45900D58D81 /* AirshipAppExtensions.framework */,
+				CB196D861DC0A45900D58D81 /* AirshipAppExtensionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB4F9CB31DBFC6EE00C1F510 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB196D6B1DC0A40500D58D81 /* AirshipAppExtensions */,
+				CB196D2C1DC0A13500D58D81 /* Airship */,
+				CB196D2D1DC0A13500D58D81 /* AirshipKit */,
+				CB4F9CB61DBFC6F100C1F510 /* StoreKit.framework */,
+				CB4F9CB41DBFC6EE00C1F510 /* GameKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,15 +504,37 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				CB196D481DC0A1B100D58D81 /* Embed Frameworks */,
+				CB196D5B1DC0A2E700D58D81 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB196D881DC0A49100D58D81 /* PBXTargetDependency */,
+				CB196D471DC0A1B100D58D81 /* PBXTargetDependency */,
+				CB196D561DC0A2E700D58D81 /* PBXTargetDependency */,
 			);
 			name = NewsApp;
 			productName = "Hello World";
 			productReference = 13B07F961A680F5B00A75B9A /* NewsApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CB196D4F1DC0A2E700D58D81 /* ServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB196D581DC0A2E700D58D81 /* Build configuration list for PBXNativeTarget "ServiceExtension" */;
+			buildPhases = (
+				CB196D4C1DC0A2E700D58D81 /* Sources */,
+				CB196D4D1DC0A2E700D58D81 /* Frameworks */,
+				CB196D4E1DC0A2E700D58D81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServiceExtension;
+			productName = ServiceExtension;
+			productReference = CB196D501DC0A2E700D58D81 /* ServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -368,16 +542,33 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = VZW2K34FVV;
+						DevelopmentTeam = 8323TSLP6W;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = VZW2K34FVV;
+						DevelopmentTeam = 8323TSLP6W;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					CB196D4F1DC0A2E700D58D81 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8323TSLP6W;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -394,6 +585,14 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = CB196D7F1DC0A45900D58D81 /* Products */;
+					ProjectRef = CB196D7E1DC0A45900D58D81 /* AirshipAppExtensions.xcodeproj */;
+				},
+				{
+					ProductGroup = CB196D3F1DC0A14A00D58D81 /* Products */;
+					ProjectRef = CB196D3E1DC0A14A00D58D81 /* AirshipKit.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -439,6 +638,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* NewsApp */,
 				00E356ED1AD99517003FC87E /* NewsAppTests */,
+				CB196D4F1DC0A2E700D58D81 /* ServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -514,6 +714,27 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		CB196D431DC0A14A00D58D81 /* AirshipKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AirshipKit.framework;
+			remoteRef = CB196D421DC0A14A00D58D81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB196D841DC0A45900D58D81 /* AirshipAppExtensions.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AirshipAppExtensions.framework;
+			remoteRef = CB196D831DC0A45900D58D81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB196D861DC0A45900D58D81 /* AirshipAppExtensionsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AirshipAppExtensionsTests.xctest;
+			remoteRef = CB196D851DC0A45900D58D81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -523,7 +744,11 @@
 			files = (
 				CB9864201DB7C74000066F8F /* Montserrat-Regular.ttf in Resources */,
 				CB98641D1DB7C73800066F8F /* Lato-Bold.ttf in Resources */,
+				CB196D4B1DC0A1F700D58D81 /* AirshipConfig.plist in Resources */,
+				CB196D311DC0A13500D58D81 /* Airship in Resources */,
 				CB98641E1DB7C73B00066F8F /* Lato-Regular.ttf in Resources */,
+				CB196D6D1DC0A40500D58D81 /* AirshipAppExtensions in Resources */,
+				CB196D331DC0A13500D58D81 /* AirshipKit in Resources */,
 				CB98641F1DB7C73E00066F8F /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,11 +758,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB98640E1DB7C5C500066F8F /* Montserrat-Regular.ttf in Resources */,
+				CB196D6C1DC0A40500D58D81 /* AirshipAppExtensions in Resources */,
 				CB98641C1DB7C61800066F8F /* Lato-Regular.ttf in Resources */,
+				CB196D4A1DC0A1F700D58D81 /* AirshipConfig.plist in Resources */,
 				CB98641B1DB7C61800066F8F /* Lato-Bold.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				CB98640D1DB7C5C500066F8F /* Montserrat-Bold.ttf in Resources */,
+				CB196D321DC0A13500D58D81 /* AirshipKit in Resources */,
+				CB196D301DC0A13500D58D81 /* Airship in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB196D4E1DC0A2E700D58D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +814,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB196D4C1DC0A2E700D58D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB196D531DC0A2E700D58D81 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -585,6 +829,21 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* NewsApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		CB196D471DC0A1B100D58D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AirshipKit;
+			targetProxy = CB196D461DC0A1B100D58D81 /* PBXContainerItemProxy */;
+		};
+		CB196D561DC0A2E700D58D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB196D4F1DC0A2E700D58D81 /* ServiceExtension */;
+			targetProxy = CB196D551DC0A2E700D58D81 /* PBXContainerItemProxy */;
+		};
+		CB196D881DC0A49100D58D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AirshipAppExtensions;
+			targetProxy = CB196D871DC0A49100D58D81 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -605,7 +864,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = VZW2K34FVV;
+				DEVELOPMENT_TEAM = 8323TSLP6W;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -623,7 +882,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = VZW2K34FVV;
+				DEVELOPMENT_TEAM = 8323TSLP6W;
 				INFOPLIST_FILE = NewsAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -635,12 +894,14 @@
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NewsApp/NewsApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = VZW2K34FVV;
+				DEVELOPMENT_TEAM = 8323TSLP6W;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -653,7 +914,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.levimykelgable.newsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prismic.newsApp;
 				PRODUCT_NAME = NewsApp;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -662,11 +923,13 @@
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NewsApp/NewsApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VZW2K34FVV;
+				DEVELOPMENT_TEAM = 8323TSLP6W;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -679,7 +942,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.levimykelgable.newsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prismic.newsApp;
 				PRODUCT_NAME = NewsApp;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -771,6 +1034,55 @@
 			};
 			name = Release;
 		};
+		CB196D591DC0A2E700D58D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8323TSLP6W;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prismic.newsApp.ServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CB196D5A1DC0A2E700D58D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8323TSLP6W;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prismic.newsApp.ServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -797,6 +1109,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB196D581DC0A2E700D58D81 /* Build configuration list for PBXNativeTarget "ServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB196D591DC0A2E700D58D81 /* Debug */,
+				CB196D5A1DC0A2E700D58D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

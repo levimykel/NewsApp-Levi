@@ -85,38 +85,38 @@ export default class Article extends Component {
       let content = this.buildContent(sliceZone.slices);
 
       return (
-          <ScrollView>
-            <StatusBar
-              hidden
-            />
-            <View style={styles.container}>
-              <Text style={styles.logo}>
-                {layoutDoc.getText('site-layout.logo')}
-              </Text>
-              
-              <TouchableHighlight onPress={ () => this._navigate() } underlayColor='rgba(0,0,0,0)'>
-                <Text style={styles.back}>&larr; back to list</Text>
-              </TouchableHighlight>
-                
-              <Text style={styles.title}>
-                {article.getStructuredText('article.title').asText()}
-              </Text>
-              
-              <Image source={{uri: article.getImage('article.image').url}} style={[styles.mainImage, styles.section]} resizeMode="cover"/>
-              
-              { !content ?
-                <Text>Content is missing, try again later</Text>
-              :
-                <View style={styles.contentWrapper}>
-                  {content}
-              
-                  <TouchableHighlight onPress={ () => this._navigate() } underlayColor='rgba(0,0,0,0)'>
-                    <Text style={styles.back}>&larr; back to list</Text>
-                  </TouchableHighlight>
-                </View>
-              }
-            </View>
-          </ScrollView>
+        <ScrollView>
+          <StatusBar
+            hidden
+          />
+          <View style={styles.container}>
+            <Text style={styles.logo}>
+              {layoutDoc.getText('site-layout.logo')}
+            </Text>
+
+            <TouchableHighlight onPress={ () => this._navigate() } underlayColor='rgba(0,0,0,0)'>
+              <Text style={styles.back}>&larr; back to list</Text>
+            </TouchableHighlight>
+
+            <Text style={styles.title}>
+              {article.getStructuredText('article.title').asText()}
+            </Text>
+
+            <Image source={{uri: article.getImage('article.image').url}} style={[styles.mainImage, styles.section]} resizeMode="cover"/>
+
+            { !content ?
+              <Text>Content is missing, try again later</Text>
+            :
+              <View style={styles.contentWrapper}>
+                {content}
+
+                <TouchableHighlight onPress={ () => this._navigate() } underlayColor='rgba(0,0,0,0)'>
+                  <Text style={styles.back}>&larr; back to list</Text>
+                </TouchableHighlight>
+              </View>
+            }
+          </View>
+        </ScrollView>
       );
     }
   }
